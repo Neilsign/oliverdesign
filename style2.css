@@ -1,0 +1,129 @@
+a {
+    color:black;
+}
+
+.q {
+    display: inline-block;
+    position: absolute;
+    bottom: 66%;
+    border:solid 8px white;
+    background-color: white;
+}
+
+.w {
+    display: inline-block;
+    position: absolute;
+    bottom: 60%;
+    border:solid 8px white;
+    background-color: white;
+    width: 6.7%;
+}
+
+.e {
+    display: inline-block;
+    position: absolute;
+    bottom: 54%;
+    border:solid 8px white;
+    background-color: white;
+    width: 6.7%;
+}
+
+.r {
+    display: inline-block;
+    position: absolute;
+    bottom: 48%;
+    border:solid 8px white;
+    background-color: white;
+    width: 6.7%;
+}
+
+body {
+    background-color: black;
+     z-index: 10;
+     margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.t {
+    display: inline-block;
+    position: absolute;
+    left: 85%;
+}
+
+.a {
+    color: white;
+    width: 65%;
+    display: inline-block;
+    position: absolute;
+    left: 150px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 60px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    transition: width 0.3s;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.sidebar-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.sidebar.open {
+    width: 250px;
+}
+
+.sidebar.open .sidebar-content {
+    display: block;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    margin-left: 60px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+.sidebar.open ~ .main-content {
+    margin-left: 250px;
+}
+
+.pole {
+    color: white;
+    width: 65%;
+    display: inline-block;
+    position: absolute;
+    left: 150px;
+    top: 40%;
+}
+

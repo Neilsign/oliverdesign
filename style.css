@@ -1,0 +1,163 @@
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+}
+
+.subtitle {
+    text-align: center;
+
+}
+
+
+.container{
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 100;
+    position: relative;
+}
+.container img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: solid rgb(0, 0, 0) ;
+    transition: all ease-out 0.3s;
+    position: relative;
+    display: flex;
+    bottom: 25%;
+
+}
+.container img:hover{
+    width: 25%;
+}
+    
+.title {
+    font-family: monospace;
+    font-size:5rem;
+
+}
+
+.subtitle {
+    font-family: monospace;
+    font-size:2rem;
+    padding-bottom: 100px;
+}
+
+body {
+    background-color: black;
+     z-index: 10;
+     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+a {
+    color:black;
+}
+
+.q {
+    display: inline-block;
+    position: absolute;
+    bottom: 66%;
+    border:solid 8px white;
+    background-color: white;
+    width: 6.7%;
+}
+
+.w {
+    display: inline-block;
+    position: absolute;
+    bottom: 60%;
+    border:solid 8px white;
+    background-color: white;
+    width: 6.7%;
+}
+
+.e {
+    display: inline-block;
+    position: absolute;
+    bottom: 54%;
+    border:solid 8px white;
+    background-color: white;
+    width: 6.7%;
+}
+
+.r {
+    display: inline-block;
+    position: absolute;
+    bottom: 48%;
+    border:solid 8px white;
+    background-color: white;
+    width: 6.7%;
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 60px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    transition: width 0.3s;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.sidebar-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.sidebar.open {
+    width: 250px;
+}
+
+.sidebar.open .sidebar-content {
+    display: block;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    margin-left: 60px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+.sidebar.open ~ .main-content {
+    margin-left: 250px;
+}
+
